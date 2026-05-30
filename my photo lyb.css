@@ -1,0 +1,106 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #fafafa; /* Yeh Instagram ka official light grey-white background color hai */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Text ka font style thoda modern karne ke liye */
+}
+main section {
+    background: white;
+    margin: 30px auto;        /* Har section ke beech 30px ka gap aur center alignment */
+    padding: 20px;            /* Box ke andar thoda breathing space (khali jagah) */
+    border-radius: 12px;      /* Card ke koney gol karne ke liye */
+    max-width: 1200px;        /* Website ko zyada choda hone se rokne ke liye */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Photos ke card ke niche ek halki, sundar parchai (shadow) */
+}
+main img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth behavior ke liye */
+}
+
+main img:hover {
+    transform: translateY(-5px); /* Photo 5 pixels upar ki taraf uth jayegi */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Hover karne par parchai thodi dark ho jayegi */
+}
+
+header,nav{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+
+}
+header{
+    background-color:#fafafa;
+    padding: 20px;
+    max-width: 470px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav{
+    background-color:#fafafa; /* 🔴 Poora background color yahan aayega, taaki koi fade look na aaye */
+    width: 100%;             /* Yeh hamesha poori screen par faili rahegi */
+    padding: 10px 0;         /* Upar aur niche thodi khali jagah (breathing space) */
+    
+    /* Agar aapne pehle position: sticky lagaya tha, toh use bhi yahan rakhein */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    max-width: 600px;
+    margin:0 auto;
+    border-radius: 20px;
+    padding: 10px;  
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-self: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    border: 2px solid rgb(238, 117, 216);
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+nav a:hover {
+    transform: scale(1.1);
+   border-color: blueviolet; 
+}
+main ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Automatic grid alignment */
+    gap: 15px;              /* Photos ke beech ka gap */
+    list-style: none;
+    padding: 0;
+}
+
+main img {
+    width: 100%;            /* Photo apne box ke hisaab se fit ho jaye */
+    height: auto;
+    border-radius: 8px;     /* Photos ke koney thode se gol karne ke liye */
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2eded;
+    margin-top: 20px;
+}
